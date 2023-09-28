@@ -5,9 +5,12 @@ import Remaining from './Components/Remaining';
 import Expences from './Components/Expences';
 import ExpenseList from './Components/ExpenseList';
 import AddExpenceForm from './Components/AddExpenceForm';
+import { AppProvider } from './context/AppContext';
 const App = () => {
   return (
-    <div>
+    <AppProvider>
+
+<div>
       <div className='container'>
         <h3 className='mt-3'> Akash`s Budget Tracker</h3>
 
@@ -38,6 +41,8 @@ const App = () => {
         </div>
       </div>
     </div>
+
+    </AppProvider>
   )
 }
 
